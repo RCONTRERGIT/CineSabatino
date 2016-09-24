@@ -24,14 +24,18 @@ namespace Cinemex.Cartelera.Business
                 ent.generoId = Convert.ToInt32(dr["PELI_GENE_ID"]);
                 ent.clasificacionId = Convert.ToInt32(dr["PELI_CLAS_ID"]);
                 ent.fotoMini = dr["PELI_FOTO_MINI"].ToString();
-
                 ent.fotoPortada = dr["PELI_FOTO_PORT"].ToString();
                 ent.anio = Convert.ToInt32(dr["PELI_ANIO"]);
                 ent.fechaAlta = Convert.ToDateTime(dr["PELI_FECH_ALTA"]);
                 ent.estatus = Convert.ToBoolean(dr["PELI_ESTA"]);
                 ent.video = dr["PELI_VIDE"].ToString();
                 ent.productor = dr["PELI_PROD"].ToString();
+                ent.Genero.nombre = dr["GENE_NOMB"].ToString();
+                ent.Clasificacion = new EntClasificacion();
+                ent.Clasificacion.nombre = dr["CLAS_NOMB"].ToString();
                 lst.Add(ent);
+
+                
             }
             return lst;
         }

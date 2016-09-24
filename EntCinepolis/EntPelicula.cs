@@ -21,5 +21,31 @@ namespace Cinemex.Cartelera.Business.Entity
         public bool estatus { get; set; }
         public string video { get; set; }
         public string productor { get; set; }
+
+        private EntGenero genero;
+        public EntGenero Genero
+        {
+            get
+            {
+                if (genero == null)
+                    genero = new EntGenero();
+                return genero;
+            }
+            set
+            {
+                if (genero == null)
+                    genero = new EntGenero();
+                genero = value;
+            }
+        }
+
+        private EntClasificacion clasificacion;
+        public EntClasificacion Clasificacion
+        {
+            get { return clasificacion; }
+            set { clasificacion = value; }
+        }
+
+
     }
 }
