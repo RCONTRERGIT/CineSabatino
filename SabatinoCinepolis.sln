@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SabatinoCinepolis", "http://localhost:49772", "{AB15F2B7-B2D0-4C91-B75E-0EE98F722017}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{de62822c-261a-4ecd-b978-44e1c7fcaf8c}|BusCinepolis.dll;{B457E8F2-D157-450E-B0D1-7659A1BFF275}|DatCinepolis.dll;{DD938CB7-96FB-428D-9A9B-63844D3903B9}|EntCinepolis.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49772"
+		Debug.AspNetCompiler.PhysicalPath = "SabatinoCinepolis\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49772\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49772"
+		Release.AspNetCompiler.PhysicalPath = "SabatinoCinepolis\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49772\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "SabatinoCinepolis\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.-UI", "1.-UI", "{2199F631-0FB2-4DAD-9EDE-717E3073858F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.-Bisiness", "2.-Bisiness", "{AA742628-C071-4745-92CF-CA2AD9D05388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.-Data", "3.-Data", "{A8282264-B59F-48AB-A9B1-287FEE9742FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatCinepolis", "DatCinepolis\DatCinepolis.csproj", "{B457E8F2-D157-450E-B0D1-7659A1BFF275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusCinepolis", "BusCinepolis\BusCinepolis.csproj", "{DE62822C-261A-4ECD-B978-44E1C7FCAF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntCinepolis", "EntCinepolis\EntCinepolis.csproj", "{DD938CB7-96FB-428D-9A9B-63844D3903B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB15F2B7-B2D0-4C91-B75E-0EE98F722017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB15F2B7-B2D0-4C91-B75E-0EE98F722017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB15F2B7-B2D0-4C91-B75E-0EE98F722017}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB15F2B7-B2D0-4C91-B75E-0EE98F722017}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B457E8F2-D157-450E-B0D1-7659A1BFF275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B457E8F2-D157-450E-B0D1-7659A1BFF275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B457E8F2-D157-450E-B0D1-7659A1BFF275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B457E8F2-D157-450E-B0D1-7659A1BFF275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE62822C-261A-4ECD-B978-44E1C7FCAF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE62822C-261A-4ECD-B978-44E1C7FCAF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE62822C-261A-4ECD-B978-44E1C7FCAF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE62822C-261A-4ECD-B978-44E1C7FCAF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD938CB7-96FB-428D-9A9B-63844D3903B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD938CB7-96FB-428D-9A9B-63844D3903B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD938CB7-96FB-428D-9A9B-63844D3903B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD938CB7-96FB-428D-9A9B-63844D3903B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB15F2B7-B2D0-4C91-B75E-0EE98F722017} = {2199F631-0FB2-4DAD-9EDE-717E3073858F}
+		{B457E8F2-D157-450E-B0D1-7659A1BFF275} = {A8282264-B59F-48AB-A9B1-287FEE9742FC}
+		{DE62822C-261A-4ECD-B978-44E1C7FCAF8C} = {AA742628-C071-4745-92CF-CA2AD9D05388}
+		{DD938CB7-96FB-428D-9A9B-63844D3903B9} = {AA742628-C071-4745-92CF-CA2AD9D05388}
+	EndGlobalSection
+EndGlobal
