@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <div class="row">
-        <div class="col-xs-12" style="overflow: scroll; height:400px;">
+        <div class="col-xs-12" style="overflow: scroll; height:500px;">
             <asp:GridView CssClass="table table-responsive table-hover" runat="server" ID="gvPeliculas" AutoGenerateColumns="False" ShowFooter="True" OnRowCancelingEdit="gvPeliculas_RowCancelingEdit" OnRowDeleting="gvPeliculas_RowDeleting" OnRowEditing="gvPeliculas_RowEditing" OnRowUpdating="gvPeliculas_RowUpdating" DataKeyNames="id, generoId, clasificacionId, anio, fotoMini, fotoPortada" AllowPaging="True" AllowSorting="True" OnPageIndexChanging="gvPeliculas_PageIndexChanging" PageSize="10" OnSorting="gvPeliculas_Sorting">
                 <Columns>
                     <asp:TemplateField HeaderText="[Nombre]" SortExpression="nombre">
