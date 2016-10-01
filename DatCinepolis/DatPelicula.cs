@@ -87,5 +87,24 @@ namespace Cinemex.Cartelera.Data
                 throw new ApplicationException("Error en capa de datos-" + ex.Message);
             }
         }
+
+        public int Borrar(int id)
+        {
+            SqlCommand com = new SqlCommand("spBorrarPelicula", con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.Add(new SqlParameter() { SqlDbType = SqlDbType.NVarChar, Value = id, ParameterName = "@id", });
+            try
+            {
+                con.Open();
+                int filas = com.ExecuteNonQuery();
+                con.Close();
+                return filas;
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                throw new ApplicationException("Error en capa de datos-" + ex.Message);
+            }
+        }
     }
 }

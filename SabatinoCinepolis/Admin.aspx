@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <div class="row">
         <div class="col-xs-12" style="overflow: scroll; height:400px;">
-            <asp:GridView CssClass="table table-responsive table-hover" runat="server" ID="gvPeliculas" AutoGenerateColumns="False" ShowFooter="True" OnRowCancelingEdit="gvPeliculas_RowCancelingEdit" OnRowDeleting="gvPeliculas_RowDeleting" OnRowEditing="gvPeliculas_RowEditing" OnRowUpdating="gvPeliculas_RowUpdating">
+            <asp:GridView CssClass="table table-responsive table-hover" runat="server" ID="gvPeliculas" AutoGenerateColumns="False" ShowFooter="True" OnRowCancelingEdit="gvPeliculas_RowCancelingEdit" OnRowDeleting="gvPeliculas_RowDeleting" OnRowEditing="gvPeliculas_RowEditing" OnRowUpdating="gvPeliculas_RowUpdating" DataKeyNames="id, generoId, clasificacionId, anio, fotoMini, fotoPortada">
                 <Columns>
                     <asp:TemplateField HeaderText="[Nombre]">
                         <EditItemTemplate>
@@ -154,7 +154,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField ShowHeader="False" HeaderText="Borrar">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lnkBorrar" runat="server" CausesValidation="False" CommandName="Delete" Text="Eliminar"></asp:LinkButton>
+                            <asp:LinkButton ID="lnkBorrar" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick='<%# string.Format ("return confirm(\"Se eliminará la pelicula {0}, está seguro?\");",Eval("nombre")) %>' Text="Eliminar"></asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

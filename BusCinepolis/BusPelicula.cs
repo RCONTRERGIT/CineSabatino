@@ -75,5 +75,14 @@ namespace Cinemex.Cartelera.Business
             if (filas != 1)
                 throw new ApplicationException(string.Format("Error al actualizar {0} de {1}", ent.nombre, ent.productor));
         }
+
+        public void Borrar(int id)
+        {
+            int filas = new DatPelicula().Borrar(id);
+
+            if (filas != 1)
+                throw new ApplicationException(string.Format("Error al Eliminar"));
+        }
+        
     }
 }
